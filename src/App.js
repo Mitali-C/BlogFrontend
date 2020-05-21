@@ -2,10 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from './components/landing/Landing';
 import About from './components/about/About';
+import NavBar from './utilities/navbar/Navbar';
 
 class App extends React.Component{
   render(){
     return(
+      <>
+      <NavBar/>
       <Router>
         <Switch>
           <Route path="/about">
@@ -16,6 +19,7 @@ class App extends React.Component{
           </Route>
         </Switch>
     </Router>
+    </>
     )
   }
 }
