@@ -1,10 +1,21 @@
 import React from 'react';
-import './App.css';
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from './components/landing/Landing';
+import About from './components/about/About';
 
 class App extends React.Component{
   render(){
     return(
-      <h1>Home page of my blog frontend</h1>
+      <Router>
+        <Switch>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/">
+            <Landing></Landing>
+          </Route>
+        </Switch>
+    </Router>
     )
   }
 }
