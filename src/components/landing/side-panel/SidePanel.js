@@ -11,7 +11,7 @@ class SidePanel extends React.Component{
     return(
       <Col>
         <Row>
-          <h3 className="static-text">STAY CONNECTED</h3>
+          <h3 className="static-text">KEEP IN TOUCH</h3>
         </Row>
         <hr/>
         <Row className="social-container">
