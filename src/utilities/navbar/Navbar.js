@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Nav } from 'react-bootstrap';
-import './navbar.css'
+import './navbar.css';
 
 class NavBar extends React.Component{
   render(){
@@ -10,11 +10,12 @@ class NavBar extends React.Component{
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">BLOGS</Nav.Link>
-            <Nav.Link href="/">BOOK REVIEWS</Nav.Link>
-            <Nav.Link href="/">TECHNOLOGY</Nav.Link>
-            <Nav.Link href="/about">ABOUT</Nav.Link>
-            <Nav.Link href="/about">CONTACT</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/category/lifestyle" && "active-link"} href="/category/lifestyle">LIFESTYLE</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/category/books" && "active-link"} href="/category/books">BOOKS</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/category/tales" && "active-link"} href="/category/tales">TALES</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/category/technology" && "active-link"} href="/category/technology">TECHNOLOGY</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/about" && "active-link"} href="/about">ABOUT</Nav.Link>
+            <Nav.Link className={window.location.pathname==="/contact" && "active-link"} href="/contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar> 
