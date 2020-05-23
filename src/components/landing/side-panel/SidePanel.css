@@ -3,6 +3,8 @@
   border: 0.5px solid #ddd;
   border-radius: 10px;
   cursor: pointer;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .icon-outline:hover{
@@ -14,6 +16,7 @@
 .social-container{
   justify-content: space-between;
   display: flex;
+  justify-content: center;
 }
 
 .static-text{

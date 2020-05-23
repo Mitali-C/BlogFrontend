@@ -1,12 +1,12 @@
 import React from 'react';
 import {Row, Col, Image} from 'react-bootstrap';
-import './SidePanel.css';
+import './CategorySidePanel.css';
 import dummy6 from '../../../images/landing/dummy/dummy6.png';
 import dummy5 from '../../../images/landing/dummy/dummy5.png';
 import dummy7 from '../../../images/landing/dummy/dummy7.png';
 import dummy8 from '../../../images/landing/dummy/dummy8.png';
 
-class SidePanel extends React.Component{
+class CategorySidePanel extends React.Component{
   stayConnected  = () => {
     return(
       <Col>
@@ -120,4 +120,4 @@ class SidePanel extends React.Component{
   }
 }
 
-export default SidePanel;
+export default CategorySidePanel;
