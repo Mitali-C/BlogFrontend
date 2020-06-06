@@ -10,6 +10,7 @@ class NavBar extends React.Component{
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
+            <Nav.Link className={window.location.pathname==="/" && "active-link"} href="/">HOME</Nav.Link>
             <Nav.Link className={window.location.pathname==="/category/lifestyle" && "active-link"} href="/category/lifestyle">LIFESTYLE</Nav.Link>
             <Nav.Link className={window.location.pathname==="/category/books" && "active-link"} href="/category/books">BOOKS</Nav.Link>
             <Nav.Link className={window.location.pathname==="/category/tales" && "active-link"} href="/category/tales">TALES</Nav.Link>
