@@ -17,7 +17,7 @@ class RecentPosts extends React.Component{
           </Col>
           <Col sm={7}>
             <a href="/" className="tag">BOOK REVIEW</a>
-            <h4><a href="/" className="post-title">GENTLY FALLS THE BAKULA - SUDHA MURTHY</a></h4>
+            <h4><a href="/" className="post-title">SOME POST TITLE</a></h4>
             <Truncate
               className="post-content"
               lines={4}
